@@ -29,6 +29,6 @@ Acesse o simulador online:
 ---
 
 ## 📂 Estrutura do projeto
-├── index.html # Página principal
-├── style.css # Estilos visuais
-├── script.js # Lógica dos cálculos
+├── index.html # Página principal  
+├── style.css # Estilos visuais  
+├── script.js # Lógica dos cálculos  
