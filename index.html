@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de IOF e IR - Aplicação Financeira</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Simulador de IOF e IR</h1>
+    <div class="card">
+      <label>Capital investido (R$):</label><br>
+      <input type="number" id="capital" placeholder="Ex: 1000" /><br>
+
+      <label>Dias de aplicação:</label><br>
+      <input type="number" id="dias" placeholder="Ex: 25" /><br>
+
+      <button onclick="calcular()">Calcular</button>
+
+      <div id="resultado" class="resultado"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
