@@ -1,9 +1,9 @@
-/* Garante que o gradiente cubra 100% da tela */
+/* Fullscreen gradient background */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   background: linear-gradient(135deg, #7b2ff7, #f107a3);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,52 +14,94 @@ html, body {
   align-items: center;
 }
 
+/* Container central */
 .container {
-  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-h1 {
-  margin-bottom: 20px;
-}
-
+/* Cartão */
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  padding: 25px;
-  width: 350px;
-  margin: 0 auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
 }
 
-input {
+/* Título */
+h1 {
+  text-align: center;
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+input[type="number"] {
+  width: 100%;
   padding: 10px;
-  width: 80%;
-  margin: 10px 0;
   border-radius: 8px;
   border: none;
   outline: none;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  font-size: 1rem;
 }
 
+/* Placeholder styling (visível) */
+input::placeholder {
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+}
+
+/* Botão */
 button {
-  padding: 10px 20px;
-  border: none;
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
   border-radius: 8px;
-  background: #00ffcc;
-  color: #000;
-  font-weight: bold;
+  border: none;
   cursor: pointer;
-  transition: background 0.3s;
+  background: linear-gradient(90deg,#00ffcc,#00ccaa);
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-button:hover {
-  background: #00ccaa;
-}
-
+/* Resultado */
 .resultado {
+  margin-top: 12px;
+  background: rgba(0,0,0,0.25);
+  padding: 12px;
+  border-radius: 8px;
   text-align: left;
-  margin-top: 20px;
-  font-size: 16px;
-  background-color: rgba(0,0,0,0.3);
-  padding: 15px;
-  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* Canvas do gráfico */
+#graficoRendimento {
+  width: 100%;
+  max-height: 320px;
+  margin-top: 14px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+/* responsividade */
+@media (max-width: 520px) {
+  .container { padding: 12px; }
+  .card { padding: 12px; }
 }

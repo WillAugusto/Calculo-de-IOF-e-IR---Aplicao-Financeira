@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cálculo de IOF e IR - Aplicação Financeira</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div class="container">
     <h1>💰 Simulador de IOF e IR</h1>
+
     <div class="card">
-      <label>Capital investido (R$):</label><br>
-      <input type="number" id="capital" placeholder="Ex: 1000" /><br>
+      <label for="capital">Capital investido (R$):</label>
+      <input id="capital" type="number" step="0.01" placeholder="Ex: 1000,00">
 
-      <label>Dias de aplicação:</label><br>
-      <input type="number" id="dias" placeholder="Ex: 25" /><br>
+      <label for="dias">Dias de aplicação:</label>
+      <input id="dias" type="number" placeholder="Ex: 25">
 
-      <button onclick="calcular()">Calcular</button>
+      <button id="btnCalcular">Calcular</button>
 
-      <div id="resultado" class="resultado"></div>
+      <div id="resultado" class="resultado" aria-live="polite"></div>
+
+      <canvas id="graficoRendimento" aria-label="Gráfico de rendimento" role="img"></canvas>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Chart.js CDN (obrigatório antes do script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
