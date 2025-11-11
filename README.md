@@ -42,8 +42,8 @@ Assim que o GitHub Pages terminar de carregar, você poderá acessar o projeto p
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **William Augusto** e **Valbert Antonio** 
-🔗 [@WillAugusto](https://github.com/WillAugusto)
+Desenvolvido por **William Augusto** e **Valbert Antonio**   
+🔗 [@WillAugusto](https://github.com/WillAugusto)  
 🔗 [@ValbertAntonio](https://github.com/ValbertAntonio)
 
 ---
